@@ -1,0 +1,19 @@
+转载自https://blog.csdn.net/weixin_43945983/article/details/110882074，已验证能够解决问题
+
+版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+本文链接：https://blog.csdn.net/weixin_4394598https://blog.csdn.net/weixin_43945983/article/details/1108820743/article/details/110882074
+————————————————
+
+Git error：
+OpenSSL SSL_read: Connection was reset, errno 10054
+
+*首先，造成这个错误很有可能是网络不稳定（尤其在访问Github受限的地区），连接超时导致的，如果再次尝试后依然报错，可以执行下面的命令。
+
+Possible solution:
+打开Git命令页面，执行git命令脚本：修改设置，解除ssl验证
+
+再执行git操作即可。
+
+Limitation：
+并没有永久性解决该问题
+
